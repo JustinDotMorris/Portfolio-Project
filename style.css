@@ -60,12 +60,24 @@ header {
 
 footer {
   background-color: black;
+  height: 13.5rem;
+  padding: 50px;
+}
+footer .footer__icons__imgholders {
+  display: inline-block;
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+footer .footer__icons__imgholders__img {
+  padding: 1rem 1rem 0 1rem;
 }
 footer #footer__email {
   color: white;
-}
-footer .footer__icon {
-  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 2rem 0 0 0;
 }
 
 * {

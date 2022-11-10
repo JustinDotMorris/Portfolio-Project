@@ -1,13 +1,29 @@
-@use "./varaibles" as *;
+@use "./variables" as *;
 footer{
     background-color: $footercolour;
+    height: 13.5rem;
+    padding: 50px;
+
+    .footer__icons__imgholders{
+        display: inline-block;
+        background-color: white;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+
+    .footer__icons__imgholders__img{
+        padding: 1rem 1rem 0 1rem;
+    }
+
 
     #footer__email{
         color: white;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 2rem 0 0 0;
     }
 
-    .footer__icon{
-        color: white;
-    }
+    
     
 }
