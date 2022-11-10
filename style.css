@@ -55,6 +55,17 @@ header {
 }
 #tech-skills #tech-skills__icon-grid {
   padding: 3rem 0 0 0;
+  display: grid;
+}
+
+footer {
+  background-color: black;
+}
+footer #footer__email {
+  color: white;
+}
+footer .footer__icon {
+  color: white;
 }
 
 * {

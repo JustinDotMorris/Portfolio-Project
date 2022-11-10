@@ -1,0 +1,13 @@
+@use "./varaibles" as *;
+footer{
+    background-color: $footercolour;
+
+    #footer__email{
+        color: white;
+    }
+
+    .footer__icon{
+        color: white;
+    }
+    
+}
