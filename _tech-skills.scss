@@ -16,6 +16,22 @@
     #tech-skills__icon-grid{
         padding: 3rem 0 0 0;
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+
+        .tech-skills__icon-grid__skills__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            align-content: center;
+
+            .tech-skills__icon-grid__container__skills-logo{
+                width: 5rem;
+                height: 7rem;
+            }
+        }
     
     }
 
