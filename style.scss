@@ -1,7 +1,7 @@
 @use "./nav";
 @use "./header";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 $secondary-text-colour: beige;
 
 *{
@@ -9,11 +9,7 @@ $secondary-text-colour: beige;
     margin: 0px;
     box-sizing: border-box;
 }
-
-// body:not(nav){
-//     font-family: Inter, sans-serif;
-// }
-
-body:not(#AAA){
-    color: blueviolet;
-}
+ body{
+    font-family: Inter, sans-serif;
+    text-align: center;
+ }

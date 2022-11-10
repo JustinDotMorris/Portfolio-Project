@@ -1,4 +1,14 @@
 header{
     text-align: left;
     // color: green;
+    font-weight: 600;
+}
+#header__welcome-msg{
+    font-size: 1rem;
+    padding: 5rem 0px 0px 3rem;
+}
+
+#header__title{
+    font-size: 4rem;
+    padding: 1rem 0 0 3rem;
 }
