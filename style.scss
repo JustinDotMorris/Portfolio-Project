@@ -1,0 +1,19 @@
+@use "./nav";
+@use "./header";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+$secondary-text-colour: beige;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+// body:not(nav){
+//     font-family: Inter, sans-serif;
+// }
+
+body:not(#AAA){
+    color: blueviolet;
+}
