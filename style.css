@@ -75,7 +75,7 @@ header {
 #my-projects__title {
   font-weight: 600;
   font-size: 2rem;
-  padding: 2rem 0 0 0;
+  padding: 6rem 0 2rem 0;
 }
 
 .my-projects__project-card {
@@ -165,8 +165,8 @@ header {
   margin-top: 1.25rem;
   margin-bottom: 2rem;
 }
-.my-projects__project-card .my-projects__project-card__button-container__buttons {
-  margin-right: 1.25rem;
+.my-projects__project-card .my-projects__project-card__button-container .my-projects__project-card__button-container__buttons {
+  margin-right: 1.5rem;
 }
 
 .primary-button {
@@ -210,9 +210,11 @@ footer #footer__email {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  color: black;
 }
 
 body {
   font-family: Inter, sans-serif;
   text-align: center;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

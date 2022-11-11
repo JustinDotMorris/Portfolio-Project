@@ -2,7 +2,7 @@
 @use "./header";
 @use "./about-me";
 @use "./tech-skills";
-@use "./variables";
+@use "./variables" as *;
 @use "./my-projects";
 @use "./cards";
 @use "./buttons";
@@ -14,8 +14,11 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    color: $primaryfontcolour;
 }
  body{
     font-family: Inter, sans-serif;
     text-align: center;
+    color: $primaryfontcolour;
+    
  }
