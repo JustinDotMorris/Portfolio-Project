@@ -1,3 +1,8 @@
+.my-projects__project-card__all-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .my-projects__project-card{
     display: flex;
     flex-direction: column;
@@ -28,7 +33,7 @@
             background-color: blueviolet;
             border-radius: 0.5rem;
 
-            #my-projects__project-card__browser__screen__circle-cont{
+            .my-projects__project-card__browser__screen__circle-cont{
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-start;
@@ -45,28 +50,28 @@
                     margin-right: 0.1rem;
                 }
     
-                #my-projects__project-card__browser__screen__circle-cont__circle__red{
+                .my-projects__project-card__browser__screen__circle-cont__circle__red{
                     background-color: #EC5C5C;
                 }
     
-                #my-projects__project-card__browser__screen__circle-cont__circle__yellow{
+                .my-projects__project-card__browser__screen__circle-cont__circle__yellow{
                     background-color: #FFDB7D;
                 }
     
-                #my-projects__project-card__browser__screen__circle-cont__circle__green{
+                .my-projects__project-card__browser__screen__circle-cont__circle__green{
                     background-color: #3EE94F;  
                 }
 
             }
 
-            #my-projects__project-card__browser__screen__container{
+            .my-projects__project-card__browser__screen__container{
                 padding: 0.5rem 0 0 0;
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
             }
 
-            #my-projects__project-card__browser__screen__container__image{
+            .my-projects__project-card__browser__screen__container__image{
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
@@ -104,4 +109,8 @@
             margin-right: 1.5rem;
         }
     }
+}
+
+.my-projects__project-card__desktop{
+    display: none;
 }

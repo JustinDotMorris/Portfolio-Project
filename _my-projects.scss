@@ -7,6 +7,9 @@
 // }
 
 #my-projects__title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-weight: 600;
     font-size: 2rem;
     padding: 6rem 0 2rem 0;

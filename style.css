@@ -73,9 +73,18 @@ header {
 }
 
 #my-projects__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-weight: 600;
   font-size: 2rem;
   padding: 6rem 0 2rem 0;
+}
+
+.my-projects__project-card__all-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .my-projects__project-card {
@@ -106,7 +115,7 @@ header {
   background-color: blueviolet;
   border-radius: 0.5rem;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont {
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -115,29 +124,29 @@ header {
   border-color: aqua;
   margin: 0.5rem 0 0 1rem;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle {
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle {
   display: flex;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   margin-right: 0.1rem;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont #my-projects__project-card__browser__screen__circle-cont__circle__red {
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle__red {
   background-color: #EC5C5C;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont #my-projects__project-card__browser__screen__circle-cont__circle__yellow {
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle__yellow {
   background-color: #FFDB7D;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont #my-projects__project-card__browser__screen__circle-cont__circle__green {
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle__green {
   background-color: #3EE94F;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__container {
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__container {
   padding: 0.5rem 0 0 0;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__container__image {
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__container__image {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -167,6 +176,10 @@ header {
 }
 .my-projects__project-card .my-projects__project-card__button-container .my-projects__project-card__button-container__buttons {
   margin-right: 1.5rem;
+}
+
+.my-projects__project-card__desktop {
+  display: none;
 }
 
 .primary-button {
