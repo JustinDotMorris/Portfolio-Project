@@ -7,18 +7,21 @@
     }
 
     #tech-skills__paragraph{
+        display: flex;
+        justify-content: center;
         font-weight: 400;
         font-size: 1rem;
-        padding: 2rem 0 0 0;
+        padding: 2rem 2rem 0 2rem;
 
     }
 
     #tech-skills__icon-grid{
         padding: 3rem 0 0 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        align-self: center;
+        
 
         .tech-skills__icon-grid__skills__container{
             display: flex;
@@ -26,6 +29,7 @@
             align-items: center;
             align-self: center;
             align-content: center;
+            margin: 1rem 1rem 1rem 1rem;
 
             .tech-skills__icon-grid__container__skills-logo{
                 width: 5rem;
