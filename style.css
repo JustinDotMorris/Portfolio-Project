@@ -72,6 +72,86 @@ header {
   height: 7rem;
 }
 
+#my-projects__title {
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 2rem 0 0 0;
+}
+
+.my-projects__project-card {
+  display: grid;
+}
+.my-projects__project-card .my-projects__project-card__browser {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 23rem;
+  height: 19rem;
+  background-color: red;
+  margin: auto;
+  border-radius: 0.25rem;
+}
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 20.5rem;
+  height: 14rem;
+  background-color: blueviolet;
+  border-radius: 0.5rem;
+}
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: solid;
+  border-width: 2px;
+  border-color: aqua;
+  margin: 0.5rem 0 0 1rem;
+}
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle {
+  display: flex;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.1rem;
+}
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont #my-projects__project-card__browser__screen__circle-cont__circle__red {
+  background-color: #EC5C5C;
+}
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont #my-projects__project-card__browser__screen__circle-cont__circle__yellow {
+  background-color: #FFDB7D;
+}
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__circle-cont #my-projects__project-card__browser__screen__circle-cont__circle__green {
+  background-color: #3EE94F;
+}
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__container {
+  padding: 0.5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen #my-projects__project-card__browser__screen__container__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 18.5rem;
+  height: 12rem;
+}
+.my-projects__project-card .my-projects__project-card__skill {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.my-projects__project-card .my-projects__project-card__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.my-projects__project-card .my-projects__project-card__paragraph {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
 footer {
   background-color: black;
   height: 13.5rem;

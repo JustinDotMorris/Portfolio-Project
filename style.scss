@@ -3,11 +3,12 @@
 @use "./about-me";
 @use "./tech-skills";
 @use "./variables";
-
+@use "./my-projects";
+@use "./cards";
+@use "./buttons";
 @use "./footer";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-$secondary-text-colour: beige;
 
 *{
     padding: 0px;
