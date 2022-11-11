@@ -1,5 +1,10 @@
 .my-projects__project-card{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 23rem;
+    border: solid green 4px;
+    align-items: flex-start;
 
     .my-projects__project-card__browser{
         display: flex;
@@ -59,10 +64,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
-
-
             }
-
 
             #my-projects__project-card__browser__screen__container__image{
                 display: flex;
@@ -75,6 +77,7 @@
     }
 
     .my-projects__project-card__skill{
+        margin-top: 2rem;
         font-weight: 600;
         font-size: 1rem;
     }
@@ -82,12 +85,24 @@
     .my-projects__project-card__title{
         font-weight: 600;
         font-size: 2.5rem;
+        margin-top: 0.3rem;
     }
 
     .my-projects__project-card__paragraph{
         font-weight: 400;
         font-size:1.125rem;
+        margin-top: 1.8rem;
+    }
 
+    .my-projects__project-card__button-container{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 1.25rem;
+        margin-bottom: 2rem;
+    }
 
+    .my-projects__project-card__button-container__buttons{
+        margin-right: 1.25rem;
+        
     }
 }
