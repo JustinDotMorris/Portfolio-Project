@@ -1,16 +1,15 @@
-//FIND OUT -------- WHY DOESNT THIS WORK???????????????????????????
-
-// #my-projects.h2{
-//     font-weight: 600;
-//     font-size: 100px;
-//     color: blue;
-// }
-
-#my-projects__title{
+@use "./variables" as *;
+#my-projects{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 2rem;
-    padding: 6rem 0 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    border: $testborder1;
+    width: $parentwidth;
+
+    #my-projects__title{
+        text-align: center;
+        padding: 6rem 0 2rem 0;
+        border: $testborder2;
+        width: $contentwidth;
+    }
 }

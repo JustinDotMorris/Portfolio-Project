@@ -1,42 +1,36 @@
+@use "./variables" as *;
 #tech-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $parentwidth;
+    border: $testborder1;
 
     #tech-skills__heading{
-        font-weight: 600;
-        font-size: 2rem;
         padding: 5rem 0 0 0;
+        border: $testborder2;
+        text-align: center;
     }
 
     #tech-skills__paragraph{
-        display: flex;
-        justify-content: center;
-        font-weight: 400;
-        font-size: 1rem;
-        padding: 2rem 2rem 0 2rem;
-
+        width: $contentwidth;
+        padding: 3rem 0 0 0;
+        border: $testborder3;
+        text-align: center;
     }
 
     #tech-skills__icon-grid{
-        padding: 3rem 0 0 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-self: center;
-        
+        border: $testborder2;
+        padding: 3rem 0 0 0;
 
-        .tech-skills__icon-grid__skills__container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-self: center;
-            align-content: center;
+        .tech-skills__icon-grid__container__skills-logo{
+            width: 5rem;
+            height: 7rem;
+            border: $testborder2;
             margin: 1rem 1rem 1rem 1rem;
-
-            .tech-skills__icon-grid__container__skills-logo{
-                width: 5rem;
-                height: 7rem;
-            }
-        }
-    
+        } 
     }
-
 }

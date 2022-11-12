@@ -1,14 +1,25 @@
+@use "./variables" as *;
 header{
-    text-align: left;
-    // color: green;
-    font-weight: 600;
-}
-#header__welcome-msg{
-    font-size: 1rem;
-    padding: 5rem 0px 0px 3rem;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    width: $parentwidth;
+    border: $testborder1;
 
-#header__title{
-    font-size: 4rem;
-    padding: 1rem 0 0 3rem;
+    .header__text{
+    display: flex;
+    margin: auto;
+    width: $contentwidth;
+    justify-content: flex-start;
+    border: $testborder2;
+    }
+
+    #header__welcome-msg{
+        padding: 5rem 0px 0px 0rem;
+    }
+
+    #header__title{
+        padding: 1rem 0 0 0rem;
+    }
 }
