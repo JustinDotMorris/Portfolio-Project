@@ -30,104 +30,87 @@ p {
   font-size: 1.125rem;
 }
 
-.my-projects__project-card__all-cards {
+.my-projects__all-cards {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  width: 90%;
+  border: solid 3px red;
 }
-
-.my-projects__project-card {
+.my-projects__all-cards .my-projects__all-cards__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
   width: 23rem;
-  border: solid green 4px;
-  align-items: flex-start;
+  border: solid 2px blue;
 }
-.my-projects__project-card .my-projects__project-card__browser {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 23rem;
-  height: 19rem;
-  background-color: red;
+  width: 100%;
+  height: 18rem;
+  background-color: #E3F6F5;
   margin: auto;
   border-radius: 0.25rem;
+  border: solid 2px green;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-self: flex-end;
-  width: 20.5rem;
-  height: 14rem;
-  background-color: blueviolet;
+  width: 90%;
+  height: 13rem;
+  background-color: white;
   border-radius: 0.5rem;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen .my-projects__all-cards__card__panel__screen__circle-cont {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  border: solid;
-  border-width: 2px;
-  border-color: aqua;
   margin: 0.5rem 0 0 1rem;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen .my-projects__all-cards__card__panel__screen__circle-cont .my-projects__all-cards__card__panel__screen__circle-cont__circle {
   display: flex;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   margin-right: 0.1rem;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle__red {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen .my-projects__all-cards__card__panel__screen__circle-cont .my-projects__all-cards__card__panel__screen__circle-cont__circle__red {
   background-color: #EC5C5C;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle__yellow {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen .my-projects__all-cards__card__panel__screen__circle-cont .my-projects__all-cards__card__panel__screen__circle-cont__circle__yellow {
   background-color: #FFDB7D;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__circle-cont .my-projects__project-card__browser__screen__circle-cont__circle__green {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen .my-projects__all-cards__card__panel__screen__circle-cont .my-projects__all-cards__card__panel__screen__circle-cont__circle__green {
   background-color: #3EE94F;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__container {
-  padding: 0.5rem 0 0 0;
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen .my-projects__all-cards__card__panel__screen__image {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  align-self: center;
+  width: 90%;
 }
-.my-projects__project-card .my-projects__project-card__browser .my-projects__project-card__browser__screen .my-projects__project-card__browser__screen__container__image {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 18.5rem;
-  height: 12rem;
-}
-.my-projects__project-card .my-projects__project-card__skill {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__skill {
   margin-top: 2rem;
-  font-weight: 600;
-  font-size: 1rem;
 }
-.my-projects__project-card .my-projects__project-card__title {
-  font-weight: 600;
-  font-size: 2.5rem;
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__title {
   margin-top: 0.3rem;
 }
-.my-projects__project-card .my-projects__project-card__paragraph {
-  font-weight: 400;
-  font-size: 1.125rem;
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__paragraph {
   margin-top: 1.8rem;
 }
-.my-projects__project-card .my-projects__project-card__button-container {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__button-container {
   display: flex;
   align-items: flex-start;
   margin-top: 1.25rem;
   margin-bottom: 2rem;
 }
-.my-projects__project-card .my-projects__project-card__button-container .my-projects__project-card__button-container__buttons {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__button-container .my-projects__all-cards__card__button-container__buttons {
   margin-right: 1.5rem;
 }
-
-.my-projects__project-card__desktop {
+.my-projects__all-cards .my-projects__all-cards__card__desktop {
   display: none;
 }
 
@@ -156,7 +139,7 @@ header {
   justify-content: flex-start;
   margin: auto;
   width: 100%;
-  border: solid 3px purple;
+  border: solid 3px red;
 }
 header .header__text {
   display: flex;
@@ -179,7 +162,7 @@ header #header__title {
   margin: auto;
   padding: 10rem 0 0 0;
   width: 100%;
-  border: solid 3px purple;
+  border: solid 3px red;
 }
 
 #about-me__title {
@@ -206,7 +189,7 @@ header #header__title {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border: solid 3px purple;
+  border: solid 3px red;
 }
 #tech-skills #tech-skills__heading {
   padding: 5rem 0 0 0;
@@ -237,7 +220,7 @@ header #header__title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 3px purple;
+  border: solid 3px red;
   width: 100%;
 }
 #my-projects #my-projects__title {

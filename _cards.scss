@@ -1,117 +1,108 @@
-.my-projects__project-card__all-cards{
+@use "./variables" as *;
+.my-projects__all-cards{
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-}
-.my-projects__project-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 23rem;
-    border: solid green 4px;
-    align-items: flex-start;
+    width: $contentwidth;
+    border: $testborder1;
     
-
-    .my-projects__project-card__browser{
+    //The card
+    .my-projects__all-cards__card{
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: stretch;
         width: 23rem;
-        height: 19rem;
-        background-color: red;
-        margin: auto;
-        border-radius: 0.25rem;
+        border: $testborder3;
 
-
-        .my-projects__project-card__browser__screen{
+        //Card images background panel
+        .my-projects__all-cards__card__panel{
             display: flex;
-            flex-direction: column;
-            justify-content:flex-end;
-            align-self: flex-end;
-            
-            width: 20.5rem;
-            height: 14rem;
-            background-color: blueviolet;
-            border-radius: 0.5rem;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 18rem;
+            background-color: #E3F6F5;
+            margin: auto;
+            border-radius: 0.25rem;
+            border: $testborder2;
 
-            .my-projects__project-card__browser__screen__circle-cont{
+            //Browser Window
+            .my-projects__all-cards__card__panel__screen{
                 display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                border: solid;
-                border-width: 2px;
-                border-color: aqua;
-                margin: 0.5rem 0 0 1rem;
-
-                .my-projects__project-card__browser__screen__circle-cont__circle{
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 90%;
+                height: 13rem;
+                background-color: white;
+                border-radius: 0.5rem;
+                
+                //Top left browser buttons (circles)
+                .my-projects__all-cards__card__panel__screen__circle-cont{
                     display: flex;
-                    width: 0.5rem;
-                    height: 0.5rem;
-                    border-radius: 50%;
-                    margin-right: 0.1rem;
-                }
-    
-                .my-projects__project-card__browser__screen__circle-cont__circle__red{
-                    background-color: #EC5C5C;
-                }
-    
-                .my-projects__project-card__browser__screen__circle-cont__circle__yellow{
-                    background-color: #FFDB7D;
-                }
-    
-                .my-projects__project-card__browser__screen__circle-cont__circle__green{
-                    background-color: #3EE94F;  
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    margin: 0.5rem 0 0 1rem;
+
+                    .my-projects__all-cards__card__panel__screen__circle-cont__circle{
+                        display: flex;
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        border-radius: 50%;
+                        margin-right: 0.1rem;
+                    }
+                    
+                    .my-projects__all-cards__card__panel__screen__circle-cont__circle__red{
+                        background-color: #EC5C5C;
+                    }
+            
+                    .my-projects__all-cards__card__panel__screen__circle-cont__circle__yellow{
+                        background-color: #FFDB7D;
+                    }
+            
+                    .my-projects__all-cards__card__panel__screen__circle-cont__circle__green{
+                        background-color: #3EE94F;  
+                    }
+                    
                 }
 
-            }
-
-            .my-projects__project-card__browser__screen__container{
-                padding: 0.5rem 0 0 0;
+            //Image of project
+            .my-projects__all-cards__card__panel__screen__image{
                 display: flex;
-                justify-content: center;
-                align-items: flex-end;
-            }
-
-            .my-projects__project-card__browser__screen__container__image{
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                width: 18.5rem;
-                height: 12rem;
+                align-self: center;
+                width: 90%;
             }
         }
     }
 
-    .my-projects__project-card__skill{
+    //Card text
+    .my-projects__all-cards__card__skill{
         margin-top: 2rem;
-        font-weight: 600;
-        font-size: 1rem;
     }
 
-    .my-projects__project-card__title{
-        font-weight: 600;
-        font-size: 2.5rem;
+    .my-projects__all-cards__card__title{
         margin-top: 0.3rem;
     }
 
-    .my-projects__project-card__paragraph{
-        font-weight: 400;
-        font-size:1.125rem;
+    .my-projects__all-cards__card__paragraph{
         margin-top: 1.8rem;
     }
 
-    .my-projects__project-card__button-container{
+    //Card buttons
+    .my-projects__all-cards__card__button-container{
         display: flex;
         align-items: flex-start;
         margin-top: 1.25rem;
         margin-bottom: 2rem;
 
-        .my-projects__project-card__button-container__buttons{
+        .my-projects__all-cards__card__button-container__buttons{
             margin-right: 1.5rem;
         }
     }
 }
 
-.my-projects__project-card__desktop{
+//Desktop cards
+.my-projects__all-cards__card__desktop{
     display: none;
+}
 }
