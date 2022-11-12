@@ -3,4 +3,11 @@ nav{
     text-align: center;
     font-family: "DM sans";
     font-weight: 700;
+
+    //Tablet & Desktop
+    @media screen and (min-width: 768px){
+        display: flex;
+
+    
+    }
 }

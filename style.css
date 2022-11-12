@@ -44,6 +44,7 @@ p {
   align-items: stretch;
   width: 23rem;
   border: solid 2px blue;
+  margin: auto;
 }
 .my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel {
   display: flex;
@@ -87,31 +88,31 @@ p {
 .my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen .my-projects__all-cards__card__panel__screen__circle-cont .my-projects__all-cards__card__panel__screen__circle-cont__circle__green {
   background-color: #3EE94F;
 }
-.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen .my-projects__all-cards__card__panel__screen__image {
+.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen__image {
   display: flex;
   align-self: center;
   width: 90%;
 }
-.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__skill {
+.my-projects__all-cards .my-projects__all-cards__card__desktop {
+  display: none;
+}
+.my-projects__all-cards .my-projects__all-cards__card__skill {
   margin-top: 2rem;
 }
-.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__title {
+.my-projects__all-cards .my-projects__all-cards__card__title {
   margin-top: 0.3rem;
 }
-.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__paragraph {
+.my-projects__all-cards .my-projects__all-cards__card__paragraph {
   margin-top: 1.8rem;
 }
-.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__button-container {
+.my-projects__all-cards .my-projects__all-cards__card__button-container {
   display: flex;
   align-items: flex-start;
   margin-top: 1.25rem;
   margin-bottom: 2rem;
 }
-.my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__button-container .my-projects__all-cards__card__button-container__buttons {
+.my-projects__all-cards .my-projects__all-cards__card__button-container .my-projects__all-cards__card__button-container__buttons {
   margin-right: 1.5rem;
-}
-.my-projects__all-cards .my-projects__all-cards__card__desktop {
-  display: none;
 }
 
 .primary-button {
@@ -131,6 +132,11 @@ nav {
   text-align: center;
   font-family: "DM sans";
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+  }
 }
 
 header {
@@ -231,20 +237,29 @@ header #header__title {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   height: 13.5rem;
-  padding: 50px;
   width: 100vw;
 }
-footer .footer__icons__imgholders {
-  display: inline-block;
+footer #footer__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+footer #footer__icons .footer__icons__imgholders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  margin: 0 0.25rem 0 0.25rem;
 }
-footer .footer__icons__imgholders .footer__icons__imgholders__img {
+footer #footer__icons .footer__icons__imgholders .footer__icons__imgholders__img {
   width: 1.25rem;
   height: 3rem;
 }
