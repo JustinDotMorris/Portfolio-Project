@@ -1,6 +1,13 @@
-$primaryfontcolour: black;
+//global variables
 $parentwidth: 100%;
 $contentwidth: 90%;
-$testborder1: solid 3px red;
-$testborder2: solid 2px green;
-$testborder3: solid 2px blue;
+//Light mode
+$primaryfontcolour: black;
+//Dark Mode
+$secondaryfontcolour:white;
+
+//Testing Phase Variables
+$testborderwidth:0px;
+$testborder1: solid $testborderwidth red;
+$testborder2: solid $testborderwidth green;
+$testborder3: solid $testborderwidth blue;

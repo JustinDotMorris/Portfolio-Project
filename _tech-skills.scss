@@ -5,9 +5,13 @@
     align-items: center;
     width: $parentwidth;
     border: $testborder1;
+    margin: 5rem 0 0 0;
+    @media screen and (min-width:768px) {
+       margin: 5rem 0 0 0; 
+    }
+    
 
     #tech-skills__heading{
-        padding: 5rem 0 0 0;
         border: $testborder2;
         text-align: center;
     }
@@ -17,6 +21,10 @@
         padding: 3rem 0 0 0;
         border: $testborder3;
         text-align: center;
+
+        @media screen and (min-width:768px){
+            width: 40%;
+        }
     }
 
     #tech-skills__icon-grid{

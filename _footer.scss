@@ -1,42 +1,79 @@
 @use "./variables" as *;
 footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: black;
+    display: flex;
+    justify-content: center;
     height: 13.5rem;
-    width: 100vw;
-    
-    //Logo container for all
-    #footer__icons{
+    width: 100%;
+    border: $testborder3;
+
+    #footer{
         display: flex;
-        justify-content: space-between;
-        width: 50%;
-
-        //circle around logos
-        .footer__icons__imgholders{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border: $testborder1;
+        @media screen and (min-width:768px) {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        //Logo container for all
+        #footer__icons{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
+            justify-content: space-between;
+            justify-self: flex-end;
+            width: 50%;
+            @media screen and (min-width:768px) {
+                order: 1;
+                justify-content: flex-end;
+            }
 
-            //Logos
-            .footer__icons__imgholders__img{
-                width: 1.25rem;
-                height: 3rem;   
+            //circle around logos
+            .footer__icons__imgholders{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                @media screen and (min-width:768px) {
+                    margin: 0 0 0 1rem;
+                }
+
+                //Logos
+                .footer__icons__imgholders__img{
+                    width: 1.25rem;
+                    height: 3rem;   
+                }
             }
         }
-    }
 
-    //Email address
-    #footer__email{
-        color: white;
-        font-weight: 400;
-        font-size: 1rem;
-        padding: 2rem 0 0 0;
+        //Email address
+        #footer__email-box{
+            margin: 2rem 0 0 0;
+                @media screen and (min-width:768px) {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-content: center;
+                    border: $testborder1;
+                    margin: 0;
+                }
+            #footer__email-box__email{
+                color: white;
+                // font-weight: 400;
+                // font-size: 1rem;
+                // padding: 2rem 0 0 0;
+                // @media screen and (min-width:768px) {
+                //     display: flex;
+                //     justify-content: flex-start;
+                //     align-content: center;
+                // }
+            }
+        }
+        
     }
+    
+    
 }

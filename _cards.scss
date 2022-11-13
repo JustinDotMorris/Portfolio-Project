@@ -78,6 +78,9 @@
     //Desktop cards
     .my-projects__all-cards__card__desktop{
         display: none;
+        @media screen and (min-width:768px) {
+            display: unset;
+        }
     }
 
     //Card text

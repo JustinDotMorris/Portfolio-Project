@@ -35,7 +35,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
   width: 90%;
-  border: solid 3px red;
+  border: solid 0px red;
 }
 .my-projects__all-cards .my-projects__all-cards__card {
   display: flex;
@@ -43,7 +43,7 @@ p {
   justify-content: center;
   align-items: stretch;
   width: 23rem;
-  border: solid 2px blue;
+  border: solid 0px blue;
   margin: auto;
 }
 .my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel {
@@ -55,7 +55,7 @@ p {
   background-color: #E3F6F5;
   margin: auto;
   border-radius: 0.25rem;
-  border: solid 2px green;
+  border: solid 0px green;
 }
 .my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen {
   display: flex;
@@ -96,6 +96,11 @@ p {
 .my-projects__all-cards .my-projects__all-cards__card__desktop {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .my-projects__all-cards .my-projects__all-cards__card__desktop {
+    display: unset;
+  }
+}
 .my-projects__all-cards .my-projects__all-cards__card__skill {
   margin-top: 2rem;
 }
@@ -127,38 +132,89 @@ p {
   text-align: center;
 }
 
+.secondary-button {
+  border: solid;
+  border-color: white;
+  border-width: 0.0625rem;
+  border-radius: 0.4375rem;
+  background-color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.78125rem 1.1875rem;
+  text-align: center;
+}
+
 nav {
+  width: 90%;
   display: none;
   text-align: center;
   font-family: "DM sans";
   font-weight: 700;
+  width: 100%;
+  margin: 1rem 0 0 0;
 }
 @media screen and (min-width: 768px) {
   nav {
-    display: flex;
+    display: unset;
   }
+}
+nav #nav__container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 0 0 0;
+  justify-content: space-between;
+  width: 90%;
+  border: solid 0px red;
+}
+nav #nav__container #nav__container__all-buttons {
+  width: 50%;
+  border: solid 0px green;
+  display: flex;
+  justify-content: space-between;
 }
 
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: auto;
+  justify-content: center;
   width: 100%;
-  border: solid 3px red;
+  border: solid 0px red;
 }
-header .header__text {
+@media screen and (min-width: 768px) {
+  header {
+    margin: 7rem 0 0 0;
+  }
+}
+header #header-container {
   display: flex;
-  margin: auto;
   width: 90%;
+  border: solid 0px red;
+  margin: 5rem 0 0 0;
   justify-content: flex-start;
-  border: solid 2px green;
 }
-header #header__welcome-msg {
-  padding: 5rem 0px 0px 0rem;
+header #header-container #header-container__all-text {
+  border: solid 0px blue;
 }
-header #header__title {
-  padding: 1rem 0 0 0rem;
+header #header-container #header-container__all-text #header-container__all-text__welcome-msg {
+  border: solid 0px blue;
+}
+header #header-container #header-container__all-text #header-container__all-text__title {
+  margin: 3rem 0 0 0;
+  border: solid 0px red;
+}
+header #header-container #header-container__image-container {
+  display: flex;
+  align-items: center;
+}
+header #header-container #header-container__image-container #header-container__image-container__image {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header #header-container #header-container__image-container #header-container__image-container__image {
+    display: unset;
+    width: 100%;
+    height: auto;
+  }
 }
 
 #about-me {
@@ -168,26 +224,59 @@ header #header__title {
   margin: auto;
   padding: 10rem 0 0 0;
   width: 100%;
-  border: solid 3px red;
+  border: solid 0px blue;
 }
-
-#about-me__title {
+@media screen and (min-width: 768px) {
+  #about-me {
+    display: grid;
+    width: 90%;
+    justify-content: center;
+    border: solid 0px green;
+    gap: solid 5px red;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "about-us-image about-us-title" "about-us-image about-us-p1" "about-us-image about-us-p2";
+    justify-items: center;
+  }
+}
+#about-me #about-me__title {
   text-align: center;
   width: 90%;
-  border: solid 2px green;
+  border: solid 0px green;
+  grid-area: about-us-title;
 }
-
-#about-me__image {
-  display: block;
+#about-me #about-me__image-container {
+  display: flex;
+  justify-content: center;
   padding: 2rem 0 0 0;
-  width: 70%;
-  border: solid 2px blue;
-}
-
-.about-me__paragraph {
   width: 90%;
+  grid-area: about-us-image;
+  border: solid 0px red;
+}
+@media screen and (min-width: 768px) {
+  #about-me #about-me__image-container {
+    padding: 0;
+  }
+}
+#about-me #about-me__image-container #about-me__image-container__image {
+  border: solid 0px blue;
+  width: 100%;
+  height: auto;
+}
+#about-me .about-me__paragraph-container {
+  width: 90%;
+  border: solid 0px red;
   padding: 1rem 0 0 0;
-  border: solid 2px green;
+}
+@media screen and (min-width: 768px) {
+  #about-me .about-me__paragraph-container {
+    padding: 0;
+  }
+}
+#about-me .about-me__paragraph-container #about-me__paragraph-container__p1 {
+  grid-area: about-us-p1;
+}
+#about-me .about-me__paragraph-container #about-me__paragraph-container__p2 {
+  grid-area: about-us-p2;
 }
 
 #tech-skills {
@@ -195,30 +284,40 @@ header #header__title {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border: solid 3px red;
+  border: solid 0px red;
+  margin: 5rem 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  #tech-skills {
+    margin: 5rem 0 0 0;
+  }
 }
 #tech-skills #tech-skills__heading {
-  padding: 5rem 0 0 0;
-  border: solid 2px green;
+  border: solid 0px green;
   text-align: center;
 }
 #tech-skills #tech-skills__paragraph {
   width: 90%;
   padding: 3rem 0 0 0;
-  border: solid 2px blue;
+  border: solid 0px blue;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #tech-skills #tech-skills__paragraph {
+    width: 40%;
+  }
 }
 #tech-skills #tech-skills__icon-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: solid 2px green;
+  border: solid 0px green;
   padding: 3rem 0 0 0;
 }
 #tech-skills #tech-skills__icon-grid .tech-skills__icon-grid__container__skills-logo {
   width: 5rem;
   height: 7rem;
-  border: solid 2px green;
+  border: solid 0px green;
   margin: 1rem 1rem 1rem 1rem;
 }
 
@@ -226,31 +325,51 @@ header #header__title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 3px red;
+  border: solid 0px red;
   width: 100%;
 }
 #my-projects #my-projects__title {
   text-align: center;
   padding: 6rem 0 2rem 0;
-  border: solid 2px green;
+  border: solid 0px green;
   width: 90%;
 }
 
 footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 13.5rem;
+  width: 100%;
+  border: solid 0px blue;
+}
+footer #footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  height: 13.5rem;
-  width: 100vw;
+  width: 90%;
+  border: solid 0px red;
 }
-footer #footer__icons {
+@media screen and (min-width: 768px) {
+  footer #footer {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+footer #footer #footer__icons {
   display: flex;
   justify-content: space-between;
+  justify-self: flex-end;
   width: 50%;
 }
-footer #footer__icons .footer__icons__imgholders {
+@media screen and (min-width: 768px) {
+  footer #footer #footer__icons {
+    order: 1;
+    justify-content: flex-end;
+  }
+}
+footer #footer #footer__icons .footer__icons__imgholders {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,15 +378,29 @@ footer #footer__icons .footer__icons__imgholders {
   height: 3rem;
   border-radius: 50%;
 }
-footer #footer__icons .footer__icons__imgholders .footer__icons__imgholders__img {
+@media screen and (min-width: 768px) {
+  footer #footer #footer__icons .footer__icons__imgholders {
+    margin: 0 0 0 1rem;
+  }
+}
+footer #footer #footer__icons .footer__icons__imgholders .footer__icons__imgholders__img {
   width: 1.25rem;
   height: 3rem;
 }
-footer #footer__email {
+footer #footer #footer__email-box {
+  margin: 2rem 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  footer #footer #footer__email-box {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    border: solid 0px red;
+    margin: 0;
+  }
+}
+footer #footer #footer__email-box #footer__email-box__email {
   color: white;
-  font-weight: 400;
-  font-size: 1rem;
-  padding: 2rem 0 0 0;
 }
 
 * {

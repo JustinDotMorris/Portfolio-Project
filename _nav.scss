@@ -1,13 +1,33 @@
+@use "./variables" as *;
+
 nav{
+    width: $contentwidth;
     display: none;
     text-align: center;
     font-family: "DM sans";
     font-weight: 700;
+    width: $parentwidth;
+    margin: 1rem 0 0 0;
 
-    //Tablet & Desktop
     @media screen and (min-width: 768px){
-        display: flex;
+        display: unset;
+        }
 
-    
+        #nav__container{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: 2rem 0 0 0;
+        justify-content: space-between;
+        width: $contentwidth;
+        border: $testborder1;
+
+        #nav__container__all-buttons{
+            width: 50%;
+            border: $testborder2;
+            display: flex;
+            justify-content: space-between;
+        }
+
     }
 }

@@ -4,36 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Justin Morris</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation Content -->
+    <div>
+        <div class="checkbox-container">
+        <input id="dark-mode" class="dark-mode-checkbox hidden" type="checkbox">
+        <label class="dark-mode-label" for="dark-mode">
+        Toggle dark mode
+        </label>
+    </div>
     <nav>
-        <div class="nav__name">
-            <h4>Justin Morris</h4>
+        <div id="nav__container">
+            <div id="nav__container__name">
+                <h4>Justin Morris</h4>
+            </div>
+            <div id="nav__container__all-buttons">
+                <a href="./index.html">
+                    <button class="secondary-button" >Home</button>
+                </a>
+                <a href="#about-me">
+                    <button class="secondary-button">About</button>
+                </a>
+                <a href="#my-projects">
+                    <button class="secondary-button">Projects</button>
+                </a>
+                <a href="#footer">
+                    <button class="primary-button">Get in Touch</button>
+                </a>
+            </div>
         </div>
-        <div class="nav__all-buttons">
-            <button>Home</button>
-            <button>About</button>
-            <button>Projects</button>
-            <button>Get in Touch</button>
-        </div>
-        
     </nav>
     <!-- Header Content -->
     <header>
-        <div class="header__text"><h4 id="header__welcome-msg">👋 Hey! I’m Justin Morris</h4></div>
-        <div class="header__text"><h1 id="header__title" >A Junior Software Developer based in the UK.</h1></div>
+        <div id="header-container">
+            <div id="header-container__all-text">
+                <div class="header-container__text" ><h4 id="header-container__all-text__welcome-msg">👋 Hey! I’m Justin Morris</h4></div>
+                <div class="header-container__text" ><h1 id="header-container__all-text__title">A Junior Software Developer based in the UK.</h1></div>
+            </div>
+            <div id="header-container__image-container">
+                <img id="header-container__image-container__image" src="./media/Images/Picture.png" alt="">
+            </div>
+        </div>
     </header>
     <!-- Main Content -->
     <main>
         <!-- About Me -->
         <div id="about-me">
-            <h3 id="about-me__title">About Me</h3>
-            <img id="about-me__image" src="./media/Images/Profile.png" alt="Profile Picture">
-            <p class="about-me__paragraph">Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus. Sodales pretium tempus tincidunt tellus in imperdiet. Integer fames maecenas amet, consequat. Et cursus gravida enim lorem urna, vivamus pulvinar porttitor. Ultrices neque nec feugiat ullamcorper ultricies ante sagittis commodo.</p>
-            <p class="about-me__paragraph" >Nunc malesuada amet at eget consectetur sit. Nibh in ut diam nulla sed porttitor et. At neque tellus convallis urna, sodales neque. In enim auctor diam nunc duis rutrum adipiscing pellentesque eu. In sollicitudin neque dictum neque proin pretium ante. Ac bibendum vestibulum ullamcorper pellentesque scelerisque. Neque senectus eu dictum ultricies tellus nisl eget sem libero. Eu sit quis vestibulum donec cras elementum.</p>        
+            <div id="about-me__title">
+                <h3>About Me</h3>
+            </div>
+            <div id="about-me__image-container">
+                <img id="about-me__image-container__image" src="./media/Images/Profile.png" alt="Profile Picture">
+            </div>
+            <div class="about-me__paragraph-container">
+                <p id="about-me__paragraph-container__p1" class="about-me__paragraph-container__paragraph">Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus. Sodales pretium tempus tincidunt tellus in imperdiet. Integer fames maecenas amet, consequat. Et cursus gravida enim lorem urna, vivamus pulvinar porttitor. Ultrices neque nec feugiat ullamcorper ultricies ante sagittis commodo.</p>
+            </div>
+            <div class="about-me__paragraph-container">
+                <p id="about-me__paragraph-containerp2" class="about-me__paragraph-container__paragraph" >Nunc malesuada amet at eget consectetur sit. Nibh in ut diam nulla sed porttitor et. At neque tellus convallis urna, sodales neque. In enim auctor diam nunc duis rutrum adipiscing pellentesque eu. In sollicitudin neque dictum neque proin pretium ante. Ac bibendum vestibulum ullamcorper pellentesque scelerisque. Neque senectus eu dictum ultricies tellus nisl eget sem libero. Eu sit quis vestibulum donec cras elementum.</p>
+            </div>      
         </div>
         <!-- Tech Skills -->
         <div id="tech-skills">
@@ -182,18 +213,22 @@
     </main>
     <!-- Footer Content -->
     <footer>
-        <div id="footer__icons">
-            <div class="footer__icons__imgholders">
-                <img class="footer__icons__imgholders__img" src="./media/Images/footer__github.svg" alt="Logo Github">
+        <div id="footer">
+            <div id="footer__icons">
+                <div class="footer__icons__imgholders">
+                    <img class="footer__icons__imgholders__img" src="./media/Images/footer__github.svg" alt="Logo Github">
+                </div>
+                <div class="footer__icons__imgholders">
+                    <img class="footer__icons__imgholders__img" src="./media/Images/footer__linkedin.svg" alt="Logo Linked In">
+                </div>
+                <div class="footer__icons__imgholders">
+                    <img class="footer__icons__imgholders__img" src="./media/Images/footer__cv.svg" alt="Logo CV">
+                </div>
             </div>
-            <div class="footer__icons__imgholders">
-                <img class="footer__icons__imgholders__img" src="./media/Images/footer__linkedin.svg" alt="Logo Linked In">
-            </div>
-            <div class="footer__icons__imgholders">
-                <img class="footer__icons__imgholders__img" src="./media/Images/footer__cv.svg" alt="Logo CV">
+            <div id="footer__email-box">
+                <p id="footer__email-box__email" >emailaddress@gmail.com</p>
             </div>
         </div>
-        <p id="footer__email" >emailaddress@gmail.com</p>
     </footer>
 
 

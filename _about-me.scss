@@ -6,25 +6,63 @@
     margin: auto;
     padding: 10rem 0 0 0;
     width: $parentwidth;
-    border: $testborder1;
-}
-
-#about-me__title{
-    text-align: center;
-    width: $contentwidth;
-    border: $testborder2;
-}
-
-#about-me__image{
-    
-    display: block;
-    padding: 2rem 0 0 0;
-    width: 70%;
     border: $testborder3;
-}
 
-.about-me__paragraph{
+    //Desktop responsivity
+    @media screen and (min-width:768px){
+    display: grid;
     width: $contentwidth;
-    padding: 1rem 0 0 0;
+    justify-content: center;
     border: $testborder2;
+    gap: solid 5px red;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+        "about-us-image about-us-title" 
+        "about-us-image about-us-p1"
+        "about-us-image about-us-p2";
+    justify-items: center;
+    }
+     
+    #about-me__title{
+        text-align: center;
+        width: $contentwidth;
+        border: $testborder2;
+        grid-area: about-us-title;
+    }
+
+    #about-me__image-container{
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0 0 0;
+        width: $contentwidth;
+        grid-area: about-us-image;
+        border: $testborder1;
+        @media screen and (min-width:768px){
+            padding: 0;
+        }
+
+        #about-me__image-container__image{
+        border: $testborder3;
+        width: 100%;
+        height: auto;
+        
+        }
+    }
+    
+    .about-me__paragraph-container{
+        width: $contentwidth;
+        border: $testborder1;
+        padding: 1rem 0 0 0;
+        @media screen and (min-width:768px) {
+            padding: 0;
+        }
+
+        #about-me__paragraph-container__p1{
+            grid-area: about-us-p1;
+        }
+
+        #about-me__paragraph-container__p2{
+            grid-area: about-us-p2;
+        }
+    }
 }

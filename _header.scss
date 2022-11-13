@@ -1,25 +1,75 @@
 @use "./variables" as *;
+
 header{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: auto;
+    justify-content: center;
     width: $parentwidth;
     border: $testborder1;
-
-    .header__text{
-    display: flex;
-    margin: auto;
-    width: $contentwidth;
-    justify-content: flex-start;
-    border: $testborder2;
+    @media screen and (min-width:768px) {
+        margin: 7rem 0 0 0;
     }
 
-    #header__welcome-msg{
-        padding: 5rem 0px 0px 0rem;
-    }
 
-    #header__title{
-        padding: 1rem 0 0 0rem;
+    #header-container{
+        display: flex;
+        width: $contentwidth;
+        border: $testborder1;
+        margin: 5rem 0 0 0;
+        justify-content: flex-start;
+
+        // All Header Text
+        #header-container__all-text{
+            border: $testborder3;
+                
+            #header-container__all-text__welcome-msg{
+                border: $testborder3;
+            }
+                
+            #header-container__all-text__title{
+                margin: 3rem 0 0 0;
+                border: $testborder1;
+            }        
+        }
+
+        //Header Image
+        #header-container__image-container{
+            display: flex;
+            align-items: center;
+                    
+            #header-container__image-container__image{
+                display: none;
+                @media screen and (min-width:768px){
+                    display: unset;
+                    width: 100%;
+                    // max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
     }
 }
+
+// header{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     margin: auto;
+//     width: $parentwidth;
+//     border: $testborder1;
+
+//     .header__text{
+//     display: flex;
+//     margin: auto;
+//     width: $contentwidth;
+//     justify-content: flex-start;
+//     border: $testborder2;
+//     }
+
+//     #header__welcome-msg{
+//         padding: 5rem 0px 0px 0rem;
+//     }
+
+//     #header__title{
+//         padding: 1rem 0 0 0rem;
+//     }
+// }
