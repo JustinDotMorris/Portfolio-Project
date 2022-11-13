@@ -130,26 +130,28 @@ p {
 
 .primary-button {
   border: solid;
-  border-color: black;
+  border-color: #E3F6F5;
   border-width: 0.0625rem;
   border-radius: 0.4375rem;
-  background-color: white;
+  background-color: #E3F6F5;
   font-weight: 700;
   font-size: 1rem;
   padding: 0.78125rem 1.1875rem;
   text-align: center;
+  color: #272643;
 }
 
 .secondary-button {
   border: solid;
-  border-color: white;
+  border-color: #E3F6F5;
   border-width: 0.0625rem;
   border-radius: 0.4375rem;
-  background-color: white;
+  background-color: #272643;
   font-weight: 700;
   font-size: 1rem;
   padding: 0.78125rem 1.1875rem;
   text-align: center;
+  color: #E3F6F5;
 }
 
 nav {
