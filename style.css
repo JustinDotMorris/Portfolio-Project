@@ -336,7 +336,7 @@ header #header-container #header-container__image-container #header-container__i
 }
 
 footer {
-  background-color: black;
+  background-color: #E3F6F5;
   display: flex;
   justify-content: center;
   height: 13.5rem;
@@ -413,4 +413,5 @@ footer #footer #footer__email-box #footer__email-box__email {
 body {
   font-family: Inter, sans-serif;
   color: black;
+  background-color: #282746;
 }/*# sourceMappingURL=style.css.map */
