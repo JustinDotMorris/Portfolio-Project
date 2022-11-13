@@ -344,7 +344,7 @@ header #header-container #header-container__image-container #header-container__i
 }
 
 footer {
-  background-color: #E3F6F5;
+  background-color: black;
   display: flex;
   justify-content: center;
   height: 13.5rem;
