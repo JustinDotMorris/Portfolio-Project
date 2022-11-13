@@ -1,0 +1,8 @@
+@use "./variables" as *;
+.icon{
+    fill: white;
+    // filter: brightness(0) saturate(100%) invert(97%) sepia(14%) saturate(240%) hue-rotate(119deg) brightness(99%) contrast(94%);
+} 
+#icon{
+    fill: white;
+}

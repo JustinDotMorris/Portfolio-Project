@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./icons";
 @use "./text";
 @use "./cards";
 @use "./buttons";
@@ -15,10 +16,11 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    color: $primaryfontcolour;
+    //Icon colour (has to be in * because svg styling in the shadow DOM)
+    fill: white;
 }
  body{
     font-family: Inter, sans-serif;
     color: $primaryfontcolour;
-    background-color: #282746;
+    // background-color: #282746;
  }
