@@ -71,7 +71,7 @@ p {
   justify-content: flex-end;
   width: 90%;
   height: 13rem;
-  background-color: white;
+  background-color: #272643;
   border-radius: 0.5rem;
 }
 .my-projects__all-cards .my-projects__all-cards__card .my-projects__all-cards__card__panel .my-projects__all-cards__card__panel__screen .my-projects__all-cards__card__panel__screen__circle-cont {
@@ -344,7 +344,7 @@ header #header-container #header-container__image-container #header-container__i
 }
 
 footer {
-  background-color: black;
+  background-color: #E3F6F5;
   display: flex;
   justify-content: center;
   height: 13.5rem;
@@ -381,7 +381,7 @@ footer #footer #footer__icons .footer__icons__imgholders {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #272643;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -408,17 +408,18 @@ footer #footer #footer__email-box {
   }
 }
 footer #footer #footer__email-box #footer__email-box__email {
-  color: white;
+  color: #272643;
 }
 
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  fill: white;
+  fill: #E3F6F5;
 }
 
 body {
   font-family: Inter, sans-serif;
-  color: black;
+  color: #E3F6F5;
+  background-color: #282746;
 }/*# sourceMappingURL=style.css.map */
