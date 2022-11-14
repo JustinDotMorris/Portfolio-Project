@@ -140,6 +140,11 @@ p {
   text-align: center;
 }
 
+.primary-button:hover {
+  background-color: rgb(196, 196, 196);
+  cursor: pointer;
+}
+
 .secondary-button {
   border: solid;
   border-color: white;
@@ -150,6 +155,11 @@ p {
   font-size: 1rem;
   padding: 0.78125rem 1.1875rem;
   text-align: center;
+}
+
+.secondary-button:hover {
+  border: solid 1px black;
+  cursor: pointer;
 }
 
 nav {

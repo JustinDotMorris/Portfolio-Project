@@ -1,3 +1,4 @@
+@use "./variables" as *;
 .primary-button{
     border: solid;
     border-color: black;
@@ -9,6 +10,10 @@
     padding: 0.78125rem 1.1875rem;
     text-align: center;
 }
+.primary-button:hover{
+    background-color: $primarybuttonhovercolour;
+    cursor: pointer;
+}
 .secondary-button{
     border: solid;
     border-color: white;
@@ -19,4 +24,8 @@
     font-size: 1rem;
     padding: 0.78125rem 1.1875rem;
     text-align: center;
+}
+.secondary-button:hover{
+    border: $secondarybuttonborder;
+    cursor: pointer;
 }
