@@ -11,6 +11,10 @@
     text-align: center;
     color: $primarybuttontextcolour;
 }
+.primary-button:hover{
+    background-color: $primarybuttonhovercolour;
+    cursor: pointer;
+}
 .secondary-button{
     border: solid;
     border-color: $secondarybuttonbordercolour;
@@ -22,4 +26,8 @@
     padding: 0.78125rem 1.1875rem;
     text-align: center;
     color: $secondarybuttontextcolour;
+}
+.secondary-button:hover{
+    background-color: $secondarybuttonhovercolour;
+    cursor: pointer;
 }

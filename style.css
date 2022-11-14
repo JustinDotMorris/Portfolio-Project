@@ -141,6 +141,11 @@ p {
   color: #272643;
 }
 
+.primary-button:hover {
+  background-color: rgb(196, 196, 196);
+  cursor: pointer;
+}
+
 .secondary-button {
   border: solid;
   border-color: #E3F6F5;
@@ -152,6 +157,11 @@ p {
   padding: 0.78125rem 1.1875rem;
   text-align: center;
   color: #E3F6F5;
+}
+
+.secondary-button:hover {
+  background-color: #727191;
+  cursor: pointer;
 }
 
 nav {
