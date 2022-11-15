@@ -17,10 +17,10 @@
     margin: 0px;
     box-sizing: border-box;
     //Icon colour (has to be in * because svg styling in the shadow DOM)
-    fill: white;
+    fill: $iconcolour;
 }
  body{
     font-family: Inter, sans-serif;
     color: $primaryfontcolour;
-    // background-color: #282746;
+    background-color: $backgroundcolour;
  }

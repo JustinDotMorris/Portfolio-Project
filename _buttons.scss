@@ -1,14 +1,15 @@
 @use "./variables" as *;
 .primary-button{
     border: solid;
-    border-color: black;
+    border-color: $primarybuttonbordercolour;
     border-width: 0.0625rem;
     border-radius: 0.4375rem;
-    background-color: white;
+    background-color: $primarybuttonbackgroundcolour;
     font-weight: 700;
     font-size: 1rem;
     padding: 0.78125rem 1.1875rem;
     text-align: center;
+    color: $primarybuttontextcolour;
 }
 .primary-button:hover{
     background-color: $primarybuttonhovercolour;
@@ -16,16 +17,17 @@
 }
 .secondary-button{
     border: solid;
-    border-color: white;
+    border-color: $secondarybuttonbordercolour;
     border-width: 0.0625rem;
     border-radius: 0.4375rem;
-    background-color: white;
+    background-color: $secondarybuttonbackgroundcolour;
     font-weight: 700;
     font-size: 1rem;
     padding: 0.78125rem 1.1875rem;
     text-align: center;
+    color: $secondarybuttontextcolour;
 }
 .secondary-button:hover{
-    border: $secondarybuttonborder;
+    background-color: $secondarybuttonhovercolour;
     cursor: pointer;
 }

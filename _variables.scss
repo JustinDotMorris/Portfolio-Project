@@ -2,11 +2,51 @@
 $parentwidth: 100%;
 $contentwidth: 90%;
 
-//Light mode
-$primaryfontcolour: black;
-$footercolour:black;
+// //Light Mode
+// $primaryfontcolour: black;
+// //card
+// $browsercolour: #272643;
+// //footer
+// $footercolour:black;
+// $footerfontcolour:white;
+// $footericonholdercolour:white;
+// //buttons - primary
+// $primarybuttonbackgroundcolour:white;
+// $primarybuttonbordercolour:black;
+// $primarybuttontextcolour:#272643;
+// $primarybuttonhovercolour: rgb(196, 196, 196);
+// //buttons - secondary
+// $secondarybuttonbackgroundcolour:white;
+// $secondarybuttonbordercolour:white;
+// $secondarybuttontextcolour:black;
+// $secondarybuttonhovercolour:#727191;
+// //icons
+// $iconcolour:black;
+// //Whole page
+// $backgroundcolour:white;
+
+//Dark Mode
+$primaryfontcolour: #E3F6F5;
+//card
+$browsercolour: #272643;
+//footer
+$footercolour:#E3F6F5;
+$footerfontcolour:#272643;
+$footericonholdercolour:#272643;
+//buttons - primary
+$primarybuttonbackgroundcolour:#E3F6F5;
+$primarybuttonbordercolour:#E3F6F5;
+$primarybuttontextcolour:#272643;
 $primarybuttonhovercolour: rgb(196, 196, 196);
-$secondarybuttonborder: solid 1px black;
+//buttons - secondary
+$secondarybuttonbackgroundcolour:#272643;
+$secondarybuttonbordercolour:#E3F6F5;
+$secondarybuttontextcolour:#E3F6F5;
+$secondarybuttonhovercolour:#727191;
+// icons
+$iconcolour:#E3F6F5;
+//Whole page
+$backgroundcolour:#282746;
 
 
 //Testing Phase Variables
