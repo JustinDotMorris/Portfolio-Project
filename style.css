@@ -279,8 +279,13 @@ header #header-container #header-container__image-container #header-container__i
 }
 #about-me #about-me__image-container #about-me__image-container__image {
   border: solid 0px blue;
-  width: 100%;
+  width: 70%;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  #about-me #about-me__image-container #about-me__image-container__image {
+    width: 100%;
+  }
 }
 #about-me .about-me__paragraph-container {
   width: 90%;

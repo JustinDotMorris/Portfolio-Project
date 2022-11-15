@@ -43,8 +43,11 @@
 
         #about-me__image-container__image{
         border: $testborder3;
-        width: 100%;
+        width: 70%;
         height: auto;
+        @media screen and (min-width:768px){
+            width: 100%;
+        }
         
         }
     }
